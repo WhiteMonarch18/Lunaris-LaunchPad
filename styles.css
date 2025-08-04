@@ -1,0 +1,99 @@
+:root {
+    --background-color: #0A0A0A;
+    --text-color: #FFFFFF;
+    --accent-color: #2176FF;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body h1 {
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Inter';
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+#navbar {
+    height: 6rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+#home {
+    margin-top: -6rem;
+    background-image: url('https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1920&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.btn {
+    padding: 1.5rem;
+    height: auto;
+    width: auto;
+    font-size: 2rem;
+    border-radius: 5%;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}
+
+.btn:active {
+    background-color: rgb(15, 57, 247);
+    transition: ease;
+}
